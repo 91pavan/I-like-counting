@@ -24,3 +24,9 @@ def main(r, done):
 if __name__ == '__main__':
     r = praw.Reddit(user_agent='counting bot')
     r.login('I_like_counting', 'INSERTPASSWORD')
+
+    print 'Exit with CTRL-C'
+    done =[]
+    while True:
+        main(r, done)
+        sleep(7)
